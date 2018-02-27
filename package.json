@@ -5,7 +5,8 @@
   "main": "./node_modules/.bin/wdio",
   "scripts": {
     "test": "wdio",
-    "test:local": "wdio wdio.local.conf.js"
+    "test:local": "wdio wdio.local.conf.js",
+    "start": "node ./server/index.js"
   },
   "repository": {
     "type": "git",

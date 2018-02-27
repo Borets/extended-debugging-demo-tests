@@ -53,15 +53,28 @@ exports.config = {
         extendedDebugging: true,
         browserName: 'chrome',
         platform: 'Windows 10',
-        version: '55.0',
+        version: 'latest',
         build: 'Build ' + Date.now()
     }, {
         extendedDebugging: true,
         browserName: 'firefox',
         platform: 'Windows 10',
-        version: '55.0',
+        version: 'latest',
         build: 'Build ' + Date.now()
-    }],
+    },{
+        extendedDebugging: true,
+        browserName: 'chrome',
+        platform: 'Windows 10',
+        version: 'latest-1',
+        build: 'Build ' + Date.now()
+    },{
+        extendedDebugging: true,
+        browserName: 'chrome',
+        platform: 'Windows 10',
+        version: 'latest-2',
+        build: 'Build ' + Date.now()
+    }
+    ],
     //
     // ===================
     // Test Configurations

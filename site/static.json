@@ -1,0 +1,13 @@
+{
+    "proxies": {
+      "/api/": {
+        "origin": "https://intense-woodland-25264.herokuapp.com/"
+      }
+    },
+
+    "routes": {
+      "/bootstrap/*": "node_modules/bootstrap/"
+    }
+  
+
+}

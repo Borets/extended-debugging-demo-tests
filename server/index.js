@@ -4,10 +4,10 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 
-const PORT = 80
+const PORT = process.env.PORT || 8080
 
-app.get('/api/v1/login', function (req, res) {
-    if (Math.random() > 0.5) {
+app.get('/v1/login', function (req, res) {
+    if (Math.random() > 0.60) {
         res.status(500)
         return res.json({ error: 'INTERNAL SERVER ERROR' })
     }

@@ -140,7 +140,7 @@
 
         
         $('#login').click(function () {
-            var xhr = createCORSRequest('GET', 'http://ec2-54-205-6-40.compute-1.amazonaws.com/api/v1/login')
+            var xhr = createCORSRequest('GET', '/api/v1/login')
 
             xhr.onload = function(response) {
                 if (response.currentTarget.status === 200) {
