@@ -101,7 +101,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'http://extended-debugging-demo.s3-website-us-west-1.amazonaws.com',
+    baseUrl: 'https://extended-debugging-demo.herokuapp.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -148,8 +148,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporters: ['spec'],
-    
+    reporters: ['spec','junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './'
+         }
+    },
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
