@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="flaky_login_test" timestamp="2018-05-15T21:54:08" time="8.209" tests="1" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="41ccbc6d7c99cb18cb71e0b9fc1a18f4"/>
+      <property name="suiteName" value="flaky login test"/>
+      <property name="capabilities" value="firefox.latest.windows10"/>
+      <property name="file" value="./test/logintest.e2e.js"/>
+    </properties>
+    <testcase classname="firefox.latest.windows10.flaky_login_test" name="should_try_to_login" time="6.943">
+      <error message="Could not log in"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/execute - {"script":"sauce:context=flaky login test - should try to login","args":[]}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element - {"using":"id","value":"username"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":{"ELEMENT":"0"},"state":"success","hCode":8221346,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element/0/clear - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":null,"state":"success","hCode":16246400,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element/0/value - {"value":["a","d","m","i","n"],"text":"admin"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":null,"state":"success","hCode":13881388,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":{"ELEMENT":"1"},"state":"success","hCode":14238294,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element/1/clear - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":null,"state":"success","hCode":11332821,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element/1/value - {"value":["m","y","s","u","p","e","r","s","e","c","(11 more items)"],"text":"mysupersecretpassword"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":null,"state":"success","hCode":31245069,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element - {"using":"id","value":"login"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":{"ELEMENT":"2"},"state":"success","hCode":32446185,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/element/2/click - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":null,"state":"success","hCode":29491261,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":22062826,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":4895397,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":18927899,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":13110975,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":26697556,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":25366358,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":1976216,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":31427247,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":27406605,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":23241215,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/title - {}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842/screenshot - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"Jumbotron Template for Bootstrap","state":"success","hCode":10507440,"class":"org.openqa.selenium.remote.Response"}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":"[base64] 61128 bytes","state":"success","hCode":248471,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/861254797f6d4be2aa7e2fba07928842 - {}
+RESULT: {"status":0,"sessionId":"861254797f6d4be2aa7e2fba07928842","value":""}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: Could not log in
+    at getTitle() - at title() - getTitle.js:31:28
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

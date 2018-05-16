@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="header_test" timestamp="2018-05-15T21:54:07" time="20.223" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="14d21fdb1c24d060f6a618a39d72b024"/>
+      <property name="suiteName" value="header test"/>
+      <property name="capabilities" value="firefox.latest.windows10"/>
+      <property name="file" value="./test/headertest5.e2e.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="failing_JS_test" timestamp="2018-05-15T21:54:07" time="20.222" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="14d21fdb1c24d060f6a618a39d72b024"/>
+      <property name="suiteName" value="failing JS test"/>
+      <property name="capabilities" value="firefox.latest.windows10"/>
+      <property name="file" value="./test/headertest5.e2e.js"/>
+    </properties>
+    <testcase classname="firefox.latest.windows10.failing_JS_test" name="should_have_opened_correct_page" time="1.169">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/execute - {"script":"sauce:context=failing JS test - should have opened correct page","args":[]}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":""}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/title - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":"Jumbotron Template for Bootstrap","state":"success","hCode":32164198,"class":"org.openqa.selenium.remote.Response"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.latest.windows10.failing_JS_test" name="should_open_modal" time="1.446">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/execute - {"script":"sauce:context=failing JS test - should open modal","args":[]}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"id","value":"modal"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"0"},"state":"success","hCode":33371687,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/0/click - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":null,"state":"success","hCode":3660143,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"1"},"state":"success","hCode":19788919,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/elements - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":[{"ELEMENT":"1"}],"state":"success","hCode":20532469,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/1/displayed - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":true,"state":"success","hCode":28297510,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"1"},"state":"success","hCode":32302902,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/1/displayed - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":true,"state":"success","hCode":14619071,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"css selector","value":"#exampleModalLong .modal-body"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"2"},"state":"success","hCode":12988355,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/2/text - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":"Hello There","state":"success","hCode":20707107,"class":"org.openqa.selenium.remote.Response"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.latest.windows10.failing_JS_test" name="should_close_modal" time="1.16">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/execute - {"script":"sauce:context=failing JS test - should close modal","args":[]}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"3"},"state":"success","hCode":7013687,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/3/click - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":null,"state":"success","hCode":28450194,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":{"ELEMENT":"3"},"state":"success","hCode":33491301,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/elements - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":[{"ELEMENT":"3"}],"state":"success","hCode":24774156,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/element/3/displayed - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":false,"state":"success","hCode":6546902,"class":"org.openqa.selenium.remote.Response"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.latest.windows10.failing_JS_test" name="wait_15_seconds" time="15.057">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd/execute - {"script":"sauce:context=failing JS test - wait 15 seconds","args":[]}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":""}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/f74b3051b29141e2bbd4ecc75bb68fbd - {}
+RESULT: {"status":0,"sessionId":"f74b3051b29141e2bbd4ecc75bb68fbd","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

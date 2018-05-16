@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="flaky_login_test" timestamp="2018-05-15T21:54:03" time="8.991" tests="1" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="c883875b49c31c1a38597f70a9e03f10"/>
+      <property name="suiteName" value="flaky login test"/>
+      <property name="capabilities" value="chrome.latest-4.windows10"/>
+      <property name="file" value="./test/logintest2.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.latest-4.windows10.flaky_login_test" name="should_try_to_login" time="7.9">
+      <error message="Could not log in"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/execute - {"script":"sauce:context=flaky login test - should try to login","args":[]}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element - {"using":"id","value":"username"}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":{"ELEMENT":"0.5410067360209725-1"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element/0.5410067360209725-1/clear - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element/0.5410067360209725-1/value - {"value":["a","d","m","i","n"],"text":"admin"}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":{"ELEMENT":"0.5410067360209725-2"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element/0.5410067360209725-2/clear - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element/0.5410067360209725-2/value - {"value":["m","y","s","u","p","e","r","s","e","c","(11 more items)"],"text":"mysupersecretpassword"}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element - {"using":"id","value":"login"}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":{"ELEMENT":"0.5410067360209725-3"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/element/0.5410067360209725-3/click - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":null}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/title - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"Jumbotron Template for Bootstrap"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef/screenshot - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":"[base64] 95900 bytes"}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/092628ef0b154e16959950ba506abcef - {}
+RESULT: {"status":0,"sessionId":"092628ef0b154e16959950ba506abcef","value":""}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: Could not log in
+    at getTitle() - at title() - getTitle.js:31:28
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

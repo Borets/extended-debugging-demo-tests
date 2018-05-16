@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="header_test" timestamp="2018-05-15T21:54:03" time="18.406" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="179f7a3e3a5ed8706e2b399402f1c8ec"/>
+      <property name="suiteName" value="header test"/>
+      <property name="capabilities" value="chrome.latest.windows10"/>
+      <property name="file" value="./test/headertest4.e2e.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="failing_JS_test" timestamp="2018-05-15T21:54:03" time="18.405" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="179f7a3e3a5ed8706e2b399402f1c8ec"/>
+      <property name="suiteName" value="failing JS test"/>
+      <property name="capabilities" value="chrome.latest.windows10"/>
+      <property name="file" value="./test/headertest4.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_have_opened_correct_page" time="0.125">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/execute - {"script":"sauce:context=failing JS test - should have opened correct page","args":[]}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":""}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/title - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":"Jumbotron Template for Bootstrap"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_open_modal" time="1.299">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/execute - {"script":"sauce:context=failing JS test - should open modal","args":[]}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"id","value":"modal"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-1"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-1/click - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-2"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/elements - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":[{"ELEMENT":"0.020692679029902017-2"}]}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-2/displayed - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":true}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-2"}}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-2/displayed - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":true}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"css selector","value":"#exampleModalLong .modal-body"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-3"}}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-3/text - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":"Hello There"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_close_modal" time="0.857">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/execute - {"script":"sauce:context=failing JS test - should close modal","args":[]}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-4"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-4/click - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":{"ELEMENT":"0.020692679029902017-4"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/elements - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":[{"ELEMENT":"0.020692679029902017-4"}]}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/element/0.020692679029902017-4/displayed - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":false}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="wait_15_seconds" time="15.087">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f/execute - {"script":"sauce:context=failing JS test - wait 15 seconds","args":[]}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":""}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/95e2d4471baf474caadc88ee39ed778f - {}
+RESULT: {"status":0,"sessionId":"95e2d4471baf474caadc88ee39ed778f","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

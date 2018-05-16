@@ -73,7 +73,20 @@ exports.config = {
         platform: 'Windows 10',
         version: 'latest-2',
         build: 'Build ' + Date.now()
+    },{
+        extendedDebugging: true,
+        browserName: 'chrome',
+        platform: 'Windows 10',
+        version: 'latest-3',
+        build: 'Build ' + Date.now()
+    },{
+        extendedDebugging: true,
+        browserName: 'chrome',
+        platform: 'Windows 10',
+        version: 'latest-4',
+        build: 'Build ' + Date.now()
     }
+
     ],
     //
     // ===================

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="flaky_login_test" timestamp="2018-05-15T21:54:03" time="3.137" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="70f32d99b1aacecc5e3a9f086c4c56a6"/>
+      <property name="suiteName" value="flaky login test"/>
+      <property name="capabilities" value="chrome.latest-2.windows10"/>
+      <property name="file" value="./test/logintest1.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.latest-2.windows10.flaky_login_test" name="should_try_to_login" time="2.005">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/execute - {"script":"sauce:context=flaky login test - should try to login","args":[]}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element - {"using":"id","value":"username"}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":{"ELEMENT":"0.7493518741549929-1"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element/0.7493518741549929-1/clear - {}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element/0.7493518741549929-1/value - {"value":["a","d","m","i","n"],"text":"admin"}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":{"ELEMENT":"0.7493518741549929-2"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element/0.7493518741549929-2/clear - {}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element/0.7493518741549929-2/value - {"value":["m","y","s","u","p","e","r","s","e","c","(11 more items)"],"text":"mysupersecretpassword"}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element - {"using":"id","value":"login"}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":{"ELEMENT":"0.7493518741549929-3"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/element/0.7493518741549929-3/click - {}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":null}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440/title - {}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":"Admin Area"}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/e2982f66ddc04874b7756f8fdec8b440 - {}
+RESULT: {"status":0,"sessionId":"e2982f66ddc04874b7756f8fdec8b440","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

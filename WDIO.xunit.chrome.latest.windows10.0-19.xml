@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="site_test" timestamp="2018-05-15T21:54:23" time="4.173" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="9613df101bf80eff11a2c34c83e4dbfe"/>
+      <property name="suiteName" value="site test"/>
+      <property name="capabilities" value="chrome.latest.windows10"/>
+      <property name="file" value="./test/test1.e2e.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="failing_JS_test" timestamp="2018-05-15T21:54:23" time="4.172" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="9613df101bf80eff11a2c34c83e4dbfe"/>
+      <property name="suiteName" value="failing JS test"/>
+      <property name="capabilities" value="chrome.latest.windows10"/>
+      <property name="file" value="./test/test1.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_have_opened_correct_page" time="0.145">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/execute - {"script":"sauce:context=failing JS test - should have opened correct page","args":[]}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":""}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/title - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":"Jumbotron Template for Bootstrap"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_open_modal" time="1.513">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/execute - {"script":"sauce:context=failing JS test - should open modal","args":[]}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"id","value":"modal"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-1"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-1/click - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-2"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/elements - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":[{"ELEMENT":"0.8525599561254347-2"}]}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-2/displayed - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":true}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"id","value":"exampleModalLong"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-2"}}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-2/displayed - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":true}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"css selector","value":"#exampleModalLong .modal-body"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-3"}}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-3/text - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":"Hello There"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.latest.windows10.failing_JS_test" name="should_close_modal" time="1.175">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/execute - {"script":"sauce:context=failing JS test - should close modal","args":[]}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-4"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-4/click - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":null}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":{"ELEMENT":"0.8525599561254347-4"}}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/elements - {"using":"id","value":"closeit"}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":[{"ELEMENT":"0.8525599561254347-4"}]}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e/element/0.8525599561254347-4/displayed - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":false}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/19be30745a504704b2f4ec5f24cf987e - {}
+RESULT: {"status":0,"sessionId":"19be30745a504704b2f4ec5f24cf987e","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
