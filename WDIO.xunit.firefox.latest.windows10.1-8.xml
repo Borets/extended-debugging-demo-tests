@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="flaky_login_test" timestamp="2018-05-15T20:12:07" time="3.687" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="41ccbc6d7c99cb18cb71e0b9fc1a18f4"/>
+      <property name="suiteName" value="flaky login test"/>
+      <property name="capabilities" value="firefox.latest.windows10"/>
+      <property name="file" value="./test/logintest.e2e.js"/>
+    </properties>
+    <testcase classname="firefox.latest.windows10.flaky_login_test" name="should_try_to_login" time="2.397">
+      <system-out>
+        <![CDATA[
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/execute - {"script":"sauce:context=flaky login test - should try to login","args":[]}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":""}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element - {"using":"id","value":"username"}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":{"ELEMENT":"0"},"state":"success","hCode":12145271,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element/0/clear - {}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":null,"state":"success","hCode":29442138,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element/0/value - {"value":["a","d","m","i","n"],"text":"admin"}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":null,"state":"success","hCode":3336634,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":{"ELEMENT":"1"},"state":"success","hCode":17415994,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element/1/clear - {}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":null,"state":"success","hCode":12921826,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element/1/value - {"value":["m","y","s","u","p","e","r","s","e","c","(11 more items)"],"text":"mysupersecretpassword"}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":null,"state":"success","hCode":19058892,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element - {"using":"id","value":"login"}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":{"ELEMENT":"2"},"state":"success","hCode":31867017,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: POST https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/element/2/click - {}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":null,"state":"success","hCode":4531002,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: GET https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f/title - {}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":"Admin Area","state":"success","hCode":21292157,"class":"org.openqa.selenium.remote.Response"}
+COMMAND: DELETE https://ondemand.saucelabs.com:443/wd/hub/session/70f2e590ff594848890b10d6158f1a8f - {}
+RESULT: {"status":0,"sessionId":"70f2e590ff594848890b10d6158f1a8f","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

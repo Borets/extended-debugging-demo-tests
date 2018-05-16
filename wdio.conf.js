@@ -218,8 +218,7 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    // beforeTest: function (test) {
-    // },
+    beforeTest: function (test) {    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -240,24 +239,23 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    //afterTest: function (test) {   
-    //},
+    afterTest: function (test) {     },
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
      */
-    afterSuite: function (suite) {
-        console.log("SauceOnDemandSessionID="+browser.sessionId)
-    },
-    /**
+    afterSuite: function (suite) {  
+        console.log("SauceOnDemandSessionID="+browser.sessionId+" job-name="+suite.title)
+
+      },
+    /** 
      * Gets executed after all tests are done. You still have access to all global variables from
      * the test.
      * @param {Number} result 0 - test pass, 1 - test fail
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    // after: function (result, capabilities, specs) {
-    // },
+    after: function (result, capabilities, specs) {    },
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {Object} config wdio configuration object
