@@ -81,9 +81,10 @@ exports.config = {
         build: 'Build ' + Date.now()
     },{
         extendedDebugging: true,
-        browserName: 'chrome',
-        platform: 'Windows 10',
-        version: 'latest-4',
+        browserName: 'Chrome',
+        deviceName: 'Samsung Galaxy S9 WQHD GoogleAPI Emulator',
+        platformVersion: '7.0',
+        platformName: 'Android',
         build: 'Build ' + Date.now()
     }
 
@@ -161,12 +162,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporters: ['spec','junit'],
-    reporterOptions: {
-        junit: {
-            outputDir: './'
-         }
-    },
+    reporters: ['spec'],
+    
+    // reporterOptions: {
+    //     //junit: {
+    //     //    outputDir: './'
+    //  }
+    //},
 
     //
     // Options to be passed to Mocha.
@@ -231,7 +233,7 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    beforeTest: function (test) {    },
+    // beforeTest: function (test) {    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -252,7 +254,7 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    afterTest: function (test) {     },
+    // afterTest: function (test) { },
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
