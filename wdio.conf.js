@@ -57,9 +57,9 @@ exports.config = {
         build: 'Build ' + Date.now()
     }, {
         extendedDebugging: true,
-        browserName: 'firefox',
+        browserName: 'chrome',
         platform: 'Windows 10',
-        version: 'latest',
+        version: 'latest-4',
         build: 'Build ' + Date.now()
     },{
         extendedDebugging: true,
@@ -86,8 +86,14 @@ exports.config = {
         platformVersion: '7.0',
         platformName: 'Android',
         build: 'Build ' + Date.now()
+    },{
+        extendedDebugging: true,
+        browserName: 'Chrome',
+        deviceName: 'Samsung Galaxy S8 Plus HD GoogleAPI Emulator',
+        platformVersion: '7.0',
+        platformName: 'Android',
+        build: 'Build ' + Date.now()
     }
-
     ],
     //
     // ===================
@@ -162,13 +168,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporters: ['spec'],
+    reporters: ['spec','junit'],
     
-    // reporterOptions: {
-    //     //junit: {
-    //     //    outputDir: './'
-    //  }
-    //},
+    reporterOptions: {
+        junit: {
+            outputDir: './',
+            packageName: process.env.USER_ROLE
+        }
+    },
 
     //
     // Options to be passed to Mocha.
