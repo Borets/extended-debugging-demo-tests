@@ -1,7 +1,7 @@
 const assert = require('assert')
 
-describe('site test', () => {
-    describe('failing JS test', () => {
+describe('Modal Test', () => {
+    describe('Modal Test', () => {
         before(() => browser.url('/'))
 
         it('should have opened correct page', () => {
